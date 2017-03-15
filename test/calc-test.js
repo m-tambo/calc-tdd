@@ -1,7 +1,7 @@
 'use strict'
 
 const { assert: {isDefined, equal, isNumber} } = require('chai')
-const { calc } = require('../lib/calculator.js')
+const calc = require('../lib/calculator.js')
 
 describe('calc', () => {
   it('should return a number', () => {
