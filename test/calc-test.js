@@ -1,27 +1,14 @@
 'use strict'
 
-const { assert: {isObject, isFunction} } = require('chai')
-const calc = require('../lib/calculator.js')
+const { assert: {isDefined, equal, isNumber} } = require('chai')
+const { calc } = require('../lib/calculator.js')
 
 describe('calc', () => {
-  it('should export an object', () => {
-    isObject(calc)
-  });
+  it('should return a number', () => {
+    isNumber(calc(1,2,'+'))
+  })
 
-  it('should have access to divide module', () => {
-    isFunction(divide)
-  });
-
-  it('should have access to mutiply module', () => {
-    isFunction(multiply)
-  });
-
-  it('should have access to add module', () => {
-    isFunction(add)
-  });
-
-  it('should have access to subtract module', () => {
-    isFunction(subtract)
-  });
-
+  it('should use the add function if the operator is "+"', () => {
+    equal(calc())
+  })
 })

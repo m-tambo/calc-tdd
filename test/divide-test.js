@@ -1,5 +1,5 @@
 const { assert: { isNumber, equal }} = require('chai')
-const divide = require('../lib/divide.js')
+const { divide } = require('../lib/divide.js')
 
 describe('divide', () => {
   it('should return a number', () => {

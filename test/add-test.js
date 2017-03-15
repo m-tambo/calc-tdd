@@ -1,5 +1,5 @@
 const { assert: {isNumber, isFunction, isNotNaN, equal} } = require('chai')
-const add = require('../lib/add')
+const { add } = require('../lib/add')
 
 describe('add', () => {
   it('should return a number', () => {

@@ -1,7 +1,7 @@
 'use strict'
 
 const { assert: { isNumber, equal }} = require('chai')
-const subtract = require('../lib/subtract.js')
+const { subtract } = require('../lib/subtract.js')
 
 describe('subtract', () => {
   it('should return a number', () => {

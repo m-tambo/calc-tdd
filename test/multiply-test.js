@@ -1,7 +1,7 @@
 'use strict'
 
 const { assert: { isNumber, equal }} = require('chai')
-const multiply = require('../lib/multiply.js')
+const { multiply } = require('../lib/multiply.js')
 
 describe('multiply', () => {
   it('should return a number', () => {
